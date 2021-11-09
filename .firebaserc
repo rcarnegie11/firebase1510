@@ -1,7 +1,6 @@
 {
   "hosting": {
     "site": "ryan1510",
-
     "public": "public",
     ...
   }
