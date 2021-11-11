@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Welcome to CST Helper Questions</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.4.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.4.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.4.0/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.4.0/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.4.0/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.4.0/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.4.0/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.4.0/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.4.0/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.4.0/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style media="screen">
+      body {
+        background: #ECEFF1;
+        color: rgba(0, 0, 0, 0.87);
+        /* font-family: Roboto, Helvetica, Arial, sans-serif ;*/
+        margin: 0;
+        padding: 0;
+      }
+
+      #message {
+        background: white;
+        max-width: 360px;
+        margin: 100px auto 16px;
+        padding: 32px 24px;
+        border-radius: 3px;
+      }
+
+      #message h2 {
+        color: #ffa100;
+        font-weight: bold;
+        font-size: 16px;
+        margin: 0 0 8px;
+      }
+
+      #message h1 {
+        font-size: 22px;
+        font-weight: 300;
+        color: rgba(0, 0, 0, 0.6);
+        margin: 0 0 16px;
+      }
+
+      #message p {
+        line-height: 140%;
+        margin: 16px 0 24px;
+        font-size: 14px;
+      }
+
+      #message a {
+        display: block;
+        text-align: center;
+        background: #039be5;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        padding: 16px;
+        border-radius: 4px;
+      }
+
+      #message,
+      #message a {
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      }
+
+      #load {
+        color: rgba(0, 0, 0, 0.4);
+        text-align: center;
+        font-size: 13px;
+      }
+
+      @media (max-width: 600px) {
+
+        body,
+        #message {
+          margin-top: 0;
+          background: white;
+          box-shadow: none;
+        }
+
+        body {
+          border-top: 16px solid #ffa100;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class="pos-f-t p">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+
+          <ul class="nav nav-pills nav-fill">
+            <li class="nav-item p-2">
+              <a class="nav-link btn-secondary" href="/index.html">Java Programming</a>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link btn-secondary" href="/mathematics.html">Mathematics</a>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link btn-secondary" href="/webdev.html">Web Development</a>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link btn-secondary" href="#">Tech Writing</a>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link active btn-info" href="/1800projects.html">1800 Projects</a>
+            </li>
+          </ul>
+
+          <br>
+          <h4 class="text-white">Ryan's Study Page</h4>
+          <span class="text-muted">BCIT COMP 1800</span><br>
+          <span class="text-muted"></span>
+        </div>
+      </div>
+
+      <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    </div>
+    <!--   
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+      <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <h1 class="display-4 font-weight-normal">BCIT Project Data<br>Structures and Algorithms</h1>
+        <p class="lead font-weight-normal">Ryan's Web Dev and Programming Study Guide</p>
+        <a class="btn btn-outline-secondary" href="#jumbotron">View Page</a>
+      </div>
+      <div class="product-device box-shadow d-none d-md-block"></div>
+      <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
+    </div> -->
+
+    <div class="jumbotron jumbotron-fluid bg-secondary">
+      <div class="container">
+        <!-- <h1 class="display-4">Data Structures and Algorithms</h1>
+        <p class="lead">Ryan's Web Dev and Programming Study Guide</p> -->
+      </div>
+    </div>
+
+
+    <div class="jumbotron position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+      <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+      <h1 class="display-4">🔥 Firebase 🔥</h1>
+      <p class="lead">COMP 1800 (Best COMP) Study Solutions Helper Site 
+      </p>
+      <hr class="my-4">
+      <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
+    </div>
+
+
+
+
+  
+  <br><br><br><br>
+
+
+
+      <div class="card-deck">
+        <div class="card">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">Firestore READ</h5>
+            <p class="card-text">What are the two ways to read?<br>
+              .onSnapshot() returns a document snapshot and continues listening for data changes to that document<br>
+              .get() will get a documents snapshot one time.<br>
+              A snapshot can be one document or a collection of documents.<br>
+              The .get() function is asynchronous<br>
+              Use the .then() function to be synchronous.
+              <br><br><a href="scanner.html"></a>
+            </p>
+            <p class="card-text"><small class="text-muted">Last updated 2 mins ago</small></p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">Callback Function</h5>
+            <p class="card-text">This function is invoked when function has finished exceution.<br>
+              The result is passed as an input parameter.<br>
+              When get() is finished, a snapshot is captured.<br>
+              The callback function then() is invoked.<br>
+              The function takes a parameter that the snapshot captured<br>
+              The snapshot points to a collection or a document.<br>
+              Get the contents using doc.data()
+            </p>
+            <p class="card-text"><small class="text-muted">Last updated 1 minute ago</small></p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">DB References point to where?</h5>
+            <p class="card-text">A location in the database.<br>
+              var aDocumentRef = db.collection('users').doc('aDocRef');<br>
+              var aDocumentRef = db.doc('users/aDocRef'); </p> 
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+  
+      <br>
+  
+      <div class="card-deck">
+        <div class="card">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">var vs let</h5>
+            <p class="card-text">Variables declared with the var keyword cannot have Block Scope.<br>
+              let --> for local declarations (block scope)<br>
+              Redeclaring a variable inside a block with var wil also redeclare the variable outside the block.</p>
+              <p class="card-text">The nextLine method reads all of the input until the end of the
+                line is found, and returns it as one string.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">JSDOM allows server side editing of an HTML file</h5>
+            <p class="card-text">www.npmjs.com/package/jsdom<br>
+            const { JSDOM } = require('jsdom');<br>
+            const fs = requrie("fs");</p>
+            <p class="card-text"><small class="text-muted">Last updated 11 mins ago</small></p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">Passing value from one page to another</h5>
+            <p class="card-text">Method one: LocalStorage - recommended method<br>
+              1) Save everything local in your browser to reuse later. 2) String data, client-side. 3) Key value pairs
+              Method two: URL String<br>
+              1) Append string to end of redirection URL, with delimiter. 2) To redirect, use window.location.href or
+              window.location.replace
+              </p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+
+        <div class="card">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">Method One: addEventListener</h5>
+            <p class="card-text">A standalone piece of code, or function, that gets executed when that event happens.
+              Linked to a DOM. Listen for a "click" on this button.
+              Attached by document.getElementById("myBtn").addEventListener("click"), doThis);<br>
+              function doThis() {<br>
+              alert("Hello button clicked!");
+            </p>
+            <p class="card-text"><small class="text-muted">Last updated 2 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+        
+        <br>
+
+        <div class="card-deck">
+          <div class="card">
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body">
+              <h5 class="card-title">Do default constructors affect newly created objects? </h5>
+              <p class="card-text">Each class has
+                a default constructor that takes no parameters. The default constructor
+                is used if we don’t provide our own. This default constructor generally
+                has no effect on the newly created object.
+                </p>
+                <p class="card-text"></p>
+              <p class="card-text"><small class="text-muted">Last updated 8 mins ago</small></p>
+            </div>
+          </div>
+    
+          <div class="card">
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body">
+              <h5 class="card-title">DOM Events Interaction</h5>
+              <p class="card-text">Events are everywhere, click events, mouse events, key press events
+                What elements on this page would the user want to interact with? Some elements do nothing, like a house
+                plant,
+                But some things are meant to be interactive. Provided by a name, or unique id that it can be identified,
+                then a create a
+                pointer to that element. Be careful of using multiple elements using the same name! Unique ID is the
+                safest.</p>
+              <p class="card-text"><small class="text-muted">Last updated 4 mins ago</small></p>
+            </div>
+          </div>
+
+
+    
+          <div class="card">
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body">
+              <h5 class="card-title">Getting data from a form</h5>
+              <p class="card-text">Forms, inputs, labels, and buttons. Button can be a button tag. If it's not called a
+                form, can just be called a div<br>
+                Button is the core of the interaction. Textbox, textarea, are some input tags. <br>
+                Can be agile with bootstrap. Colour and size, can change whether it spans the whole width, can be nice for
+                mobile design.</p>
+              <p class="card-text"><small class="text-muted"></small></p>
+            </div>
+          </div>
+  
+        </div>
+
+
+
+      
+      <br><br>
+
+      
+        <br><br><br><br>
+
+
+    <section class="cid-qwp7uHgL4P" id="features1-34" data-rv-view="3440">
+
+
+    
+      <div class="container">
+        <h3 class="mbr-fonts-style mbr-section-subtitle align-center mbr-light pt-3 display-5">8 Golden Rules of Interface Design</h3>
+  
+          <h2 class="mbr-fonts-style mbr-section-title align-center display-2">Shneiderman 2016</h2>
+           <div class="underline align-center">
+               <div class="line"></div>
+           </div>
+  
+        
+
+
+           
+          <div class="row justify-content-center pt-5">
+              <div class="col-md-6 row-item col-lg-3">
+                  <div class="card-img pb-3 align-left">
+                      <span class="mbr-iconfont mbri-edit" media-simple="true"></span>
+                  </div>
+                  <h4 class="mbr-fonts-style mbr-card-title display-5">STRIVE FOR CONSISTENCY</h4>
+  
+                  <p class="mbr-text mbr-fonts-style display-7">Strive for consistency by utilizing familiar icons, colors, menu hierarchy, call-to-actions, and user flows when designing similar situations and sequence of actions. </p>
+              </div>
+  
+              <div class="col-md-6 row-item col-lg-3">
+                  <div class="card-img pb-3 align-left">
+                      <span class="mbr-iconfont mbri-sites" media-simple="true"></span>
+                  </div>
+                  <h4 class="mbr-fonts-style mbr-card-title display-5">UNIVERSAL USABILITY</h4>
+  
+                  <p class="mbr-text mbr-fonts-style display-7">Provide both Windows and Mac users have keyboard shortcuts for copying and pasting, so as the user becomes more experienced, they can navigate and operate the user interface more quickly and effortlessly.</p>
+              </div>
+  
+              <div class="col-md-6 row-item col-lg-3">
+                  <div class="card-img pb-3 align-left">
+                      <span class="mbr-iconfont mbri-photos" media-simple="true"></span>
+                  </div>
+                  <h4 class="mbr-fonts-style mbr-card-title display-5">OFFER INFORMATIVE FEEDBACK</h4>
+                  <p class="mbr-text mbr-fonts-style display-7">The user should know where they are at and what is going on at all times. For every action there should be appropriate, human-readable feedback within a reasonable amount of time. </p>
+              </div>
+  
+              <div class="col-md-6 row-item col-lg-3">
+                  <div class="card-img pb-3 align-left">
+                      <span class="mbr-iconfont mbri-like" media-simple="true"></span>
+                  </div>
+                  <h4 class="mbr-fonts-style mbr-card-title display-5">DESIGN DIALOGS TO YIELD CLOSURE</h4>
+                  <p class="mbr-text mbr-fonts-style display-7">Don’t keep your users guessing. Tell them what their action has led them to. For example, users would appreciate a “Thank You” message and a proof of purchase receipt when they’ve completed an online purchase.
+                      </p>
+              </div>
+          </div>
+          <div class="row justify-content-center pt-5">
+            <div class="col-md-6 row-item col-lg-3">
+                <div class="card-img pb-3 align-left">
+                    <span class="mbr-iconfont mbri-edit" media-simple="true"></span>
+                </div>
+                <h4 class="mbr-fonts-style mbr-card-title display-5">PREVENT ERRORS</h4>
+
+                <p class="mbr-text mbr-fonts-style display-7">No one likes to be told they’re wrong, especially your users. Systems should be designed to be as fool-proof as possible, but when unavoidable errors occur, ensure users are provided with simple, intuitive step-by-step instructions to solve the problem as quickly and painlessly as possible.</p>
+            </div>
+
+            <div class="col-md-6 row-item col-lg-3">
+                <div class="card-img pb-3 align-left">
+                    <span class="mbr-iconfont mbri-sites" media-simple="true"></span>
+                </div>
+                <h4 class="mbr-fonts-style mbr-card-title display-5">PERMIT EASY REVERSAL OF ACTIONS</h4>
+
+                <p class="mbr-text mbr-fonts-style display-7">Designers should aim to offer users obvious ways to reverse their actions. These reversals should be permitted at various points whether it occurs after a single action, a data entry or a whole sequence of actions.</p>
+            </div>
+
+            <div class="col-md-6 row-item col-lg-3">
+                <div class="card-img pb-3 align-left">
+                    <span class="mbr-iconfont mbri-photos" media-simple="true"></span>
+                </div>
+                <h4 class="mbr-fonts-style mbr-card-title display-5">KEEP USERS IN CONTROL</h4>
+                <p class="mbr-text mbr-fonts-style display-7">Allow your users to be the initiators of actions. Give users the sense that they are in full control of events occurring in the digital space. Earn their trust as you design the system to behave as they expect.</p>
+            </div>
+
+            <div class="col-md-6 row-item col-lg-3">
+                <div class="card-img pb-3 align-left">
+                    <span class="mbr-iconfont mbri-like" media-simple="true"></span>
+                </div>
+                <h4 class="mbr-fonts-style mbr-card-title display-5">REDUCE SHORT TERM MEMORY LOAD</h4>
+                <p class="mbr-text mbr-fonts-style display-7">Human attention is limited and we are only capable of maintaining around five items in our short-term memory at one time. Therefore, interfaces should be as simple as possible with proper information hierarchy, and choosing recognition over recall.
+                    </p>
+            </div>
+        </div>
+
+      </div>
+  </section>
+
+  
+  <br><br><br>
+
+    </div>
+
+    <br><br><br><br>
+    <div class="container mt-5 mb-3">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card p-3 mb-2">
+              <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-row align-items-center">
+                      <!-- <div class="icon"> <i class="bx bxl-dribbble"></i> </div> -->
+                      <div class="ms-2 c-details">
+                          <h6 class="mb-0">Firebase and Git Workflow</h6> <span></span>
+                      </div>
+                  </div>
+                  <div class="badge"> <span></span> </div>
+              </div>
+              <div class="mt-5">
+                  <h3 class="heading">Research Firebase Personal & Group Projects Team BB05</h3>
+                  <div class="mt-5">
+                      <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <div class="mt-3"> <span class="text1">4 <span class="text2">of 15 skills learned</span></span> </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+        <br>
+  
+          <div class="col-md-4">
+              <div class="card p-3 mb-2">
+                  <div class="d-flex justify-content-between">
+                      <div class="d-flex flex-row align-items-center">
+                          <!-- <div class="icon"> <i class="bx bxl-dribbble"></i> </div> -->
+                          <div class="ms-2 c-details">
+                              <h6 class="mb-0">Usability Hueristics & User Stories</h6> <span></span>
+                          </div>
+                      </div>
+                      <div class="badge"> <span></span> </div>
+                  </div>
+                  <div class="mt-5">
+                      <h3 class="heading">Problem statements, red routes, task flows, prototyping</h3>
+                      <div class="mt-5">
+                          <div class="progress">
+                              <div class="progress-bar" role="progressbar" style="width: 63%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="mt-3"> <span class="text1">7 <span class="text2">of 12 skills learned</span></span> </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="card p-3 mb-2">
+                  <div class="d-flex justify-content-between">
+                      <div class="d-flex flex-row align-items-center">
+                          <!-- <div class="icon"> <i class="bx bxl-reddit"></i> </div> -->
+                          <div class="ms-2 c-details">
+                              <h6 class="mb-0">Agile</h6> <span></span>
+                          </div>
+                      </div>
+                      <div class="badge"> <span></span> </div>
+                  </div>
+                  <div class="mt-5">
+                      <h3 class="heading">Agile methods, planning, estimation, authentication</h3>
+                      <div class="mt-5">
+                          <div class="progress">
+                              <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="mt-3"> <span class="text1">4 <span class="text2">of 9 skills learned</span></span> </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <br><br><br><br><br>
+    </div>
+    
+
+<style>
+  body {
+    background-color: #eee
+}
+
+.card {
+    border: none;
+    border-radius: 10px
+}
+
+.c-details span {
+    font-weight: 300;
+    font-size: 13px
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 39px
+}
+
+.badge span {
+    background-color: #fffbec;
+    width: 60px;
+    height: 25px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    display: flex;
+    color: #fed85d;
+    justify-content: center;
+    align-items: center
+}
+
+.progress {
+    height: 10px;
+    border-radius: 10px
+}
+
+.progress div {
+    background-color: red
+}
+
+.text1 {
+    font-size: 14px;
+    font-weight: 600
+}
+
+.text2 {
+    color: #a5aec0
+}
+</style>
+
+
+
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4"></h1>
+    <p class="lead"></p>
+  </div>
+</div>
+
+  
+
+<!-- <div class="jumbotron jumbotron-fluid bg-secondary">
+  <div class="container">
+    <h1 class="display-4"></h1>
+    <p class="lead"></p>
+  </div>
+</div> -->
+
+
+
+    <br>
+    <div class="jumbotron jumbotron-fluid bg-dark">
+      <div class="container">
+        <!-- <h1 class="display-4">Data Structures and Algorithms</h1>
+        <p class="lead">text could go here</p> -->
+      </div>
+    </div>
+
+
+    <footer class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
+            <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
+            <line x1="7.38" y1="12" x2="13.12" y2="2.06"></line>
+            <line x1="9.69" y1="16" x2="3.95" y2="6.06"></line>
+            <line x1="14.31" y1="16" x2="2.83" y2="16"></line>
+            <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
+          </svg>
+          <small class="d-block mb-3 text-muted">© 2021-2022</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Cool stuff</a></li>
+            <li><a class="text-muted" href="#">Team feature</a></li>
+            <li><a class="text-muted" href="#">Stuff for developers</a></li>
+            <li><a class="text-muted" href="#">Another one</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">School</a></li>
+            <li><a class="text-muted" href="#">Resource name</a></li>
+            <li><a class="text-muted" href="#">Another resource</a></li>
+            <li><a class="text-muted" href="#">Final resource</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Business</a></li>
+            <li><a class="text-muted" href="#">Education</a></li>
+            <li><a class="text-muted" href="#">Government</a></li>
+            <li><a class="text-muted" href="#">Gaming</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Team</a></li>
+            <li><a class="text-muted" href="#">Locations</a></li>
+            <li><a class="text-muted" href="#">Privacy</a></li>
+            <li><a class="text-muted" href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+
+    <nav class="navbar navbar-dark bg-danger"><br>
+      <!-- Navbar content --><br>
+    </nav>
+    <nav class="navbar navbar-dark bg-dark"><br>
+      <!-- Navbar content -->
+    </nav>
+    
+
+
+
+    <!-- <div id="message">
+      <h2>Welcome</h2>
+      <h1>Firebase Hosting Setup Complete</h1>
+      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
+      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    </div>
+    <p id="load">Firebase SDK Loading&hellip;</p> -->
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth',
+            'database',
+            'firestore',
+            'functions',
+            'messaging',
+            'storage',
+            'analytics',
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    </body>
+
+    </html>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Welcome to 1510 Helper Questions</title>
+    <title>Welcome to CST Helper Questions</title>
 
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/9.4.0/firebase-app-compat.js"></script>
@@ -46,7 +46,7 @@
   
           <ul class="nav nav-pills nav-fill">
             <li class="nav-item p-2" >
-              <a class="nav-link active btn-info" href="../java1510.html">Java Programming</a>
+              <a class="nav-link active btn-info" href="/index.html">Java Programming</a>
             </li>
             <li class="nav-item p-2">
               <a class="nav-link btn-secondary" href="../mathematics.html">Mathematics</a>
@@ -58,7 +58,7 @@
               <a class="nav-link btn-secondary" href="../techwriting">Tech Writing</a>
             </li>
             <li class="nav-item p-2">
-              <a class="nav-link btn-secondary" href="#">Disabled</a>
+              <a class="nav-link btn-secondary" href="/1800projects.html">1800 Projects</a>
             </li>
           </ul>
   
@@ -246,6 +246,60 @@
       
 
 
+      <div class="card-deck">
+        <div class="card">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">Scanner Methods</h5>
+            <p class="card-text">The next method of the Scanner class reads the next input token as
+              a string and returns it.</p>
+              <p class="card-text">The nextLine method reads all of the input until the end of the
+                line is found, and returns it as one string.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">Given a Random object called rand , what does the call
+              rand.nextInt() return?</h5>
+            <p class="card-text">A call to the nextInt method of a Random object returns a
+              random integer in the range of all possible int values, both positive
+              and negative.</p>
+            <p class="card-text"><small class="text-muted">Last updated 11 mins ago</small></p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">Wrapper classes</h5>
+            <p class="card-text">A wrapper class represents a particular primitive type. For instance,
+              the Integer class represents a simple integer value. An object
+              created from the Integer class stores a single int value. The
+              constructors of the wrapper classes accept the primitive value to store.
+              </p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+
+        <div class="card">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="card-title">While Loops</h5>
+            <p class="card-text">
+              How to run a scanner for int input, and if the user enters a string, restart the loop?<br><br>
+              while (!scan.hasNextInt()) {
+                scan.next();
+              }
+            </p>
+            <p class="card-text"><small class="text-muted">Last updated 2 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+
+
 <!--       
       <div class="card border-dark mb-3" style="max-width: 18rem;">
         <div class="card-header">Wrapper Continued</div>
@@ -286,9 +340,9 @@
           <div class="collapse multi-collapse" id="multiCollapseExample1">
             <div class="card card-body">
               The variable fileScan is created as a scanner that operates on the
-input file named urls.inp . Instead of passing System.in into the
-Scanner constructor, we instantiate a File object that represents the
-input file and pass it into the Scanner constructor. 
+              input file named urls.inp . Instead of passing System.in into the
+              Scanner constructor, we instantiate a File object that represents the
+              input file and pass it into the Scanner constructor. 
             </div>
           </div>
         </div>
@@ -296,11 +350,11 @@ input file and pass it into the Scanner constructor.
           <div class="collapse multi-collapse" id="multiCollapseExample2">
             <div class="card card-body">
               At that point, the
-fileScan object is ready to read and process input from the input file.
-If for some reason there is a problem finding or opening the input file,
-the attempt to create a File object will throw an IOException , which
-is why we’ve added the throws IOException clause to the main
-method header. </div>
+              fileScan object is ready to read and process input from the input file.
+              If for some reason there is a problem finding or opening the input file,
+              the attempt to create a File object will throw an IOException , which
+              is why we’ve added the throws IOException clause to the main
+              method header. </div>
           </div>
         </div>
       </div>
@@ -395,8 +449,8 @@ method header. </div>
         // firebase.functions().httpsCallable('yourFunction')().then(() => { });
         // firebase.messaging().requestPermission().then(() => { });
         // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
+         firebase.analytics(); // call to activate
+         firebase.analytics().logEvent('tutorial_completed');
         // firebase.performance(); // call to activate
         //
         // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
