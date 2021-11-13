@@ -1,6 +1,6 @@
 # firebase1510
 
-This is a side project made to use alongside CST.
+This is a personal project made as a helper website to demonstrate progress to use alongside CST.
 
 Being hosted on firebase.
 
