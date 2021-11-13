@@ -1,6 +1,6 @@
 # firebase1510
 
-Bootstrap project made as a helper website to demonstrate progress alongside CST.
+Bootstrap project made as a helper website to throw ideas and progress of specific courses alongside CST.
 
 Early stage. 
 
