@@ -1,6 +1,8 @@
 # firebase1510
 
-This is a personal project made as a helper website to demonstrate progress to use alongside CST.
+Bootstrap project made as a helper website to demonstrate progress alongside CST.
+
+Early stage. 
 
 Being hosted on firebase.
 
